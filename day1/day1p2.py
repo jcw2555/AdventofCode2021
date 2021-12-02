@@ -1,4 +1,4 @@
-# day 1 puzzle 1
+# day 1 puzzle 2
 
 def if_larger(num, prev_num):
     if int(num) > int(prev_num):
