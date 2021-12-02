@@ -1,6 +1,13 @@
-# day 2 part 2
+"""
+day 2 puzzle 2
+@author Jenna Weinman
+"""
 
 def get_location(filename):
+    """
+    obtains location of submarine and returns the 
+    final horizontal multiplied by the depth
+    """
     with open(filename) as file:
         aim = 0
         horizontal = 0
@@ -20,6 +27,7 @@ def get_location(filename):
     return horizontal * depth
 
 def main():
+    # print(get_location("day2small.txt"))
     print(get_location("day2.txt"))
 
 if __name__ == "__main__":
