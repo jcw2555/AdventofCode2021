@@ -11,7 +11,6 @@ def get_popular_bit(filename, bit_index):
     with open(filename) as file:
         ones = 0
         zeros = 0
-        count = 0
         for row in file:
             bit = int(row[bit_index])
             if bit == 0:
@@ -63,8 +62,6 @@ def power_consumption(filename):
     gamma = binary_to_decimal(get_gamma_binary(filename))
     epsilon = binary_to_decimal(get_epsilon_binary(filename))
     return gamma * epsilon
-
-
 
 def main():
     # print(get_popular_bit("day3small.txt", 1)) 
